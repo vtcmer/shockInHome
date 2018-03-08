@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--
+    <item
+        android:id="@+id/action_main"
+        android:title="Refresh"
+        android:icon="@android:drawable/ic_menu_rotate"
+        app:showAsAction="always" />
+        -->
+    <item android:id="@+id/action_search"
+        android:title="@string/action_search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_filter_active"
+        android:icon="@drawable/ic_clean_filer"
+        android:title="@string/action_clean_filter"
+        android:visible="false"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/action_filter_shop"
+        android:title="@string/action_search_shop"
+        android:icon="@android:drawable/ic_menu_rotate"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_filter_category"
+        android:title="@string/action_search_category"
+        android:icon="@android:drawable/ic_menu_rotate"
+        app:showAsAction="never" />
+
+    <!--
+    <item
+        android:id="@+id/action_filter_reset"
+        android:title="@string/action_search_reset"
+        android:icon="@android:drawable/ic_menu_rotate"
+        app:showAsAction="never" />
+-->
+
+</menu>

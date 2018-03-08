@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/containerStockItem"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_row">
+
+
+    <ImageView
+        android:layout_width="@dimen/product_item_image_size"
+        android:layout_height="@dimen/product_item_image_size"
+        android:id="@+id/imgStock"
+        android:src="@mipmap/ic_launcher"
+        android:paddingRight="5dp"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/wrapperProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imgStock"
+        android:layout_toEndOf="@+id/imgStock" >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textBold"
+            android:text="Large Text"
+            android:id="@+id/productName" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            style="@style/textNormal"
+            android:text="Medium Text"
+            android:id="@+id/productCode" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/wrapperCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/wrapperProductName"
+        android:layout_alignLeft="@+id/wrapperProductName"
+        android:layout_alignStart="@+id/wrapperProductName" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textNormal"
+            android:text="@string/category"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textNormal"
+            android:text="Medium Text"
+            android:id="@+id/productCategory" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/textNormal"
+        android:text="Medium Text"
+        android:id="@+id/productStock"
+        android:layout_below="@+id/wrapperCategory"
+        android:layout_alignLeft="@+id/wrapperCategory"
+        android:layout_alignStart="@+id/wrapperCategory" />
+
+
+</RelativeLayout>

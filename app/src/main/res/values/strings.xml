@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">StockInHome</string>
+    <string name="delete">Borrar</string>
+    <string name="send">Enviar</string>
+    <string name="categories">Categorias</string>
+    <string name="category">Categoría</string>
+    <string name="btn.save">Guardar</string>
+    <string name="btn.cancel">Cancelar</string>
+    <string name="btn.clean">Limpiar</string>
+    <string name="btn.undo">Deshacer</string>
+    <string name="btn.apply">Aplicar</string>
+    <string name="select.info">Seleccionar</string>
+
+    <string name="msg.deleted">%s Eliminados</string>
+    <string name="title.model.msg">Seleccionados %s</string>
+
+    <string name="update.unit.title">Actualizar cantidad</string>
+
+
+    <string name="category.create.success">Categoría creada correctamente</string>
+    <string name="category.update.success">Categoría actualizada correctamente</string>
+    <string name="category.delete.success">Categoría eliminada correctamente</string>
+    <string name="category.deleted.success">%s Categoría eliminada correctamente</string>
+    <string name="categories.deleted.success">%s Categorias eliminadas correctamente</string>
+
+    <string name="shoppinglist">Listado de la compra</string>
+    <string name="shoppinglist.list">Listado</string>
+
+    <string name="shoppinglist.create.success">Listado creada correctamente</string>
+    <string name="shoppinglist.update.success">Listado actualizada correctamente</string>
+    <string name="shoppinglist.delete.success">Listado eliminada correctamente</string>
+    <string name="shoppinglist.deleted.success">%s Listado eliminada correctamente</string>
+    <string name="shoppinglists.deleted.success">%s Listado eliminadas correctamente</string>
+    <string name="shoppinglists.empty">Lista de la compra vacía</string>
+    <string name="shoppingList.detail.product.unit.one">%s unidad</string>
+    <string name="shoppingList.detail.product.unit">%s unidades</string>
+
+    <string name="shoppinglist.details.delete.success">Productos eliminados del listado correctamente</string>
+    <string name="shoppinglist.detail.not.all.selected.item">No están marcados todos los productos</string>
+    <string name="shoppinglist.detail.clean">Eliminados todos los productos de la lista</string>
+
+    <string name="product.created.success">Producto %s creado correcttamente</string>
+    <string name="product.updated.success">Producto %s actualizado correcttamente</string>
+    <string name="product.deleted.success">Producto %s eliminado correcttamente</string>
+    <string name="product.not.found">Producto %s no encontrado</string>
+    <string name="product.create.new.title">Añadir nuevo producto</string>
+    <string name="product.edit.title">Modificar producto</string>
+    <string name="product.title">Productos</string>
+    <string name="product.stock.updated">Stock de productos actualizado</string>
+
+    <string name="product.adapter.category">Categoría: </string>
+    <string name="product.adapter.units">%s unidades</string>
+    <string name="product.adapter.unit">%s unidad</string>
+
+    <string name="action_search">Filtrar</string>
+    <string name="action_clean_filter">Limpiar Filtro</string>
+    <string name="action_search_shop">Filtro Tiendas</string>
+    <string name="action_search_category">Filtro Categorías</string>
+    <string name="action_search_reset">Borrar Filtro</string>
+
+    <string name="category.filter.title">Filtro por categorías</string>
+    <string name="shop.filter.title">Filtro por tiendas</string>
+
+
+
+
+</resources>

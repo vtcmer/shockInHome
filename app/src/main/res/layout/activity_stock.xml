@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/stock_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.ztt.stockinhome.stock.ui.StockActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewStock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnEdit"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="125dp"
+        android:tint="@android:color/white"
+        app:fabSize="mini"
+        app:backgroundTint="@color/colorBtnBlue"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        android:src="@android:drawable/ic_menu_camera"/>
+    <TextView
+        android:id="@+id/txtBtnEdit"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="115dp"
+        android:text="Edit"
+        android:elevation="7dp"/>
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnScanAdd"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="100dp"
+        android:tint="@android:color/white"
+        app:fabSize="mini"
+        app:backgroundTint="@color/colorBtnGreenDark"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        android:src="@android:drawable/ic_menu_camera" />
+    <TextView
+        android:id="@+id/txtBtnScanAdd"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="90dp"
+        android:text="Añadir"
+        android:elevation="7dp"/>
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnScanRemove"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="75dp"
+        android:layout_marginBottom="35dp"
+        android:tint="@android:color/white"
+        app:fabSize="mini"
+        app:backgroundTint="@color/colorBtnRed"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        android:src="@android:drawable/ic_menu_camera"/>
+
+    <TextView
+        android:id="@+id/txtBtnScanRemove"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="75dp"
+        android:layout_marginBottom="25dp"
+        android:text="Eliminar"
+        android:elevation="7dp"/>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnAdd"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:tint="@android:color/white"
+        app:fabSize="mini"
+        app:backgroundTint="@color/colorBtnGreen"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        android:src="@android:drawable/ic_input_add"/>
+
+    <TextView
+        android:id="@+id/txtBtnAdd"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="1dp"
+        android:text="Añadir"
+        android:elevation="7dp"/>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnScanMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/scan_margin"
+        android:layout_marginBottom="55dp"
+        android:tint="@android:color/white"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        android:src="@android:drawable/ic_menu_more" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_below="@+id/appbar"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</android.support.design.widget.CoordinatorLayout>
